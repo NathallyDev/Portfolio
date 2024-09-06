@@ -1,0 +1,20 @@
+meu_site/
+├── File/
+│   └── Image/
+│       └── Home.jpeg
+├── index.html
+└── styles.css
+
+
+
+Agora, embaido dessa introdução eu quero uma seção de introdução:
+
+- Alinhado a Esquerda, em negrito:
+
+"""
+Quem eu sou?
+"""
+
+- Alinhado a direita:
+
+""
