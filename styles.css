@@ -18,6 +18,7 @@ body {
     background: rgba(255, 255, 255, 0.8); /* Transparência */
     backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
     border-bottom: 1px solid #ccc;
+    z-index: 1000; /* Garante que o menu fique sobre outros elementos */
 }
 
 .navbar ul {
@@ -41,13 +42,14 @@ body {
 .header-image {
     position: relative;
     text-align: center;
-    color: white;
+    overflow: hidden; /* Garante que a imagem seja recortada */
+    height: 60vh; /* Ajusta a altura para 60% da altura da viewport */
 }
 
 .header-image img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha a área */
 }
 
 .header-text {
@@ -64,4 +66,86 @@ body {
 
 .header-text p {
     font-size: 1.2em;
+}
+
+/* Estilo da seção de introdução */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px; /* Espaço entre seções superior e inferior */
+    background-color: #f9f9f9;
+}
+
+.intro-left, .intro-right {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.intro-left h2 {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.intro-right p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 20px; /* Distância das laterais */
+}
+
+/* Estilo da seção de habilidades */
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0; /* Cor de fundo leve */
+}
+
+.skills-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.skills-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skills-item ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.skills-item ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilo da seção de palestras */
+.talks-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo leve */
+}
+
+.talks-left, .talks-right {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.talks-left h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.talks-left p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.talks-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
 }
