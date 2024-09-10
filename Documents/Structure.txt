@@ -8,6 +8,12 @@ Portifólio/
 ├── index.html
 └── styles.css
 
-## 
+## Structure
+
+- File/: Dirétorio de imagens utilizadas no site.
+
+- Index.html: Versão html com a estrutura principal
+
+- Styles.css: Implementação do designer.
 
 

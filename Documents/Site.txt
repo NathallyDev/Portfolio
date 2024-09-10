@@ -1,0 +1,41 @@
+## Navegação:
+
+- Home (principal)
+- Estudos
+- Trabalho
+- Contato
+- Redes sociais (Linkedin, github, Whatsapp)
+
+## Rodapé
+
+- Nome
+
+## Home:
+
+- Apresentação geral
+
+- Resumo das havilidades
+
+- imagens
+
+## Estudos:
+
+- Estudos
+- Cursos
+- Trabalhos acadêmicos
+- Apresentações
+
+## Trabalho:
+
+- Estagio e proejetos
+- Currículo
+- GitHub (Trabalhos)
+- Videos com demonstração
+
+## Contato
+
+- Nome
+- Contato
+- E-mail
+- Localização (Goiânia-GO, Brasil)
+- Imagem
