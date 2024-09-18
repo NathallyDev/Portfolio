@@ -6,21 +6,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
-    background-color: #000;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
+    background: linear-gradient(to right, #000000, #414040); 
 }
 
 /* Cabeçalho */
 header {
-    background: #333;
-    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 10px 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,28 +22,19 @@ header {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 24px;
-    color: #1e441e; /* Verde */
-    font-weight: bold;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .menu-toggle {
-    display: none;
+    display: block;
     cursor: pointer;
     padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 .bar {
     width: 30px;
     height: 3px;
-    background: #1e441e; /* Verde */
+    background: #fff; 
     margin: 6px 0;
 }
 
@@ -57,16 +42,38 @@ header {
 .nav-list {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    display: none;
+}
+
+.nav-list.active {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    width: 200px;
+    flex-direction: column;
 }
 
 .nav-list li {
-    margin: 0 15px;
+    margin: 15px 0;
 }
 
 .nav-list a {
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+.nav-list a:hover {
+    color: #031803; 
 }
 
 /* Seção de Introdução */
@@ -74,33 +81,49 @@ header {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: url('sua-imagem-de-fundo.jpg') no-repeat center center/cover;
-    text-align: center;
+    justify-content: flex-end;
+    text-align: right;
+    background: url('sua-imagem-de-fundo-dinamica.jpg') no-repeat center center/cover;
     padding: 0 20px;
 }
 
+.intro-content {
+    max-width: 400px;
+}
+
 .intro-content h1 {
-    font-size: 48px;
+    font-size: 36px;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.intro-content .highlight {
+    color: #031803; 
 }
 
 .intro-content p {
-    font-size: 24px;
-    color: #ccc;
-    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ddd;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    color: #000;
-    background: #1e441e; /* Verde */
+    color: #fff;
+    background: #031803; 
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #00b300; 
 }
 
 /* Menu Toggle para dispositivos móveis */
@@ -111,23 +134,9 @@ header {
 
     .nav-list {
         display: none;
-        flex-direction: column;
-        background: #333;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
     }
 
     .nav-list.active {
         display: flex;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-    .nav-list a {
-        color: #fff;
     }
 }
