@@ -3,75 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Náthally Lima Arruda</title>
+    <title>Portfólio de [Seu Nome]</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Menu Superior -->
     <header>
-        <nav class="navbar">
+        <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Estudos</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div class="header-image">
-            <img src="File/Image/Home.jpeg" alt="Imagem de Cabeçalho">
-            <div class="header-text">
-                <h1>Náthally Lima Arruda</h1>
-                <p>Estudante de engenharia, programadora e entusiasta por buracos negros</p>
-            </div>
+        <div class="social-icons">
+            <!-- Icones das Mídias Sociais -->
+            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="icon-linkedin"></a>
+            <a href="https://github.com/seu-perfil" target="_blank" class="icon-github"></a>
         </div>
     </header>
-    <section class="intro-section">
-        <div class="intro-left">
-            <h2>Quem<br>eu sou?</h2>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="hero">
+            <h1>Frase de Impacto Aqui</h1>
+            <img src="path/to/your-photo.jpg" alt="Sua Foto">
         </div>
-        <div class="intro-right">
-            <p>Estudante de Engenharia de Controle e Automação pelo Instituto Federal de Goiás e Técnica em Manutenção e Suporte em Informática pela Faculdade Senai-Fatesg. Já atuei como aluna bolsista e voluntária em projetos de extensão voltados para o ensino e em iniciações científicas na área de Energia Solar e IA, atualmente faço estágio em uma empresa de manutenção de aviônicos.</p>
+        <div class="about">
+            <h2>Sobre o que eu faço</h2>
+            <p>Texto sobre o que você faz.</p>
+            <a href="path/to/your-cv.pdf" class="button">Baixar Currículo</a>
         </div>
-    </section>
-    <section class="talks-section">
-        <div class="talks-left">
-            <h3>Palestras</h3>
-            <p>Através do <em>Stear4Girls: um projeto feito por meninas para meninas</em>, tive a oportunidade de ministrar diversas atividades e comparecer a eventos maravilhosos, como a primeira seção de homenagem a robótica do estado de Goiás e como palestrantes na Campus Party 2023.</p>
-        </div>
-        <div class="talks-right">
-            <img src="File/Image/CPBR.jpeg" alt="Imagem CPBR">
-        </div>
-    </section>
-    <section class="skills-section">
-        <div class="skills-item">
-            <h3>Proeficiência</h3>
-            <ul>
-                <li>Português</li>
-                <li>Inglês</li>
-                <li>Espanhol</li>
-                <li>Japonês</li>
-            </ul>
-        </div>
-        <div class="skills-item">
-            <h3>Linguagens de Programação:</h3>
-            <ul>
-                <li>C/C#</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-            </ul>
-        </div>
-        <div class="skills-item">
-            <h3>Habilidades</h3>
-            <ul>
-                <li>Autocard</li>
-                <li>Pacote Office</li>
-                <li>Programação</li>
-                <li>Robótica</li>
-                <li>Eletrônica</li>
-            </ul>
+        <div class="lectures">
+            <h2>Palestras</h2>
+            <p>Informações sobre palestras que você já fez ou vai fazer.</p>
         </div>
     </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre">
+        <div class="history">
+            <h2>Pequena História</h2>
+            <p>Texto sobre sua trajetória profissional.</p>
+        </div>
+        <div class="soft-skills">
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Soft Skill 1</li>
+                <li>Soft Skill 2</li>
+                <!-- Adicione mais soft skills conforme necessário -->
+            </ul>
+        </div>
+        <div class="work">
+            <h2>Trabalhos</h2>
+            <p>Descrição de trabalhos relevantes que você realizou.</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Dados para contato:</p>
+        <div id="contact-details"></div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

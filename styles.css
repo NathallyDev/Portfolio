@@ -1,151 +1,93 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
 }
 
-/* Estilo da barra de menu */
-.navbar {
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8); /* Transparência */
-    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
-    border-bottom: 1px solid #ccc;
-    z-index: 1000; /* Garante que o menu fique sobre outros elementos */
+    z-index: 1000;
 }
 
-.navbar ul {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 10px 0;
 }
 
-.navbar li {
+nav ul li {
     margin: 0 15px;
 }
 
-.navbar a {
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
     font-weight: bold;
 }
 
-/* Estilo da imagem de cabeçalho */
-.header-image {
-    position: relative;
-    text-align: center;
-    overflow: hidden; /* Garante que a imagem seja recortada */
-    height: 60vh; /* Ajusta a altura para 60% da altura da viewport */
-}
-
-.header-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que a imagem preencha a área */
-}
-
-.header-text {
+.social-icons {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    top: 10px;
+    right: 10px;
 }
 
-.header-text h1 {
-    font-size: 2.5em;
+.social-icons a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-.header-text p {
-    font-size: 1.2em;
-}
-
-/* Estilo da seção de introdução */
-.intro-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 20px; /* Espaço entre seções superior e inferior */
-    background-color: #f9f9f9;
-}
-
-.intro-left, .intro-right {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.intro-left h2 {
-    font-size: 2.5em;
+.hero {
     text-align: center;
-    line-height: 1.2;
+    padding: 80px 20px 40px;
+    color: #fff;
+    background-color: #333;
 }
 
-.intro-right p {
-    font-size: 1em;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 0 20px; /* Distância das laterais */
+.hero h1 {
+    font-size: 2.5em;
 }
 
-/* Estilo da seção de habilidades */
-.skills-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f0f0f0; /* Cor de fundo leve */
+.hero img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-.skills-item {
-    flex: 1;
-    margin: 0 10px;
+.about, .lectures, .history, .soft-skills, .work, #contato {
+    padding: 40px 20px;
+    color: #fff;
 }
 
-.skills-item h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.about .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.skills-item ul {
-    list-style: disc;
-    padding-left: 20px;
+.about .button:hover {
+    background-color: #45a049;
 }
 
-.skills-item ul li {
-    margin-bottom: 5px;
+#contato {
+    background-color: #222;
 }
 
-/* Estilo da seção de palestras */
-.talks-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f9f9f9; /* Cor de fundo leve */
-}
-
-.talks-left, .talks-right {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.talks-left h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.talks-left p {
-    font-size: 1em;
-    line-height: 1.6;
-}
-
-.talks-right img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+#contact-details {
+    /* Estilo para a seção de contato dinâmico */
 }
