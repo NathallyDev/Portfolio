@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #fff;
     margin: 0;
     padding: 0;
-    background-color: #111;
+    background-color: #000;
 }
 
 header {
@@ -49,45 +49,98 @@ nav ul li a {
 }
 
 .hero {
-    text-align: center;
-    padding: 80px 20px 40px;
-    color: #fff;
-    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80vh;
+    padding: 0 20px;
+    gap: 20px;
+    text-align: right;
 }
 
-.hero h1 {
-    font-size: 2.5em;
+.text {
+    flex: 1;
+    text-align: right;
 }
 
-.hero img {
+.text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    margin: 0;
+    text-align: right;
+}
+
+.highlight {
+    color: #6dbb63; /* PMS 357 */
+}
+
+.description {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: right; /* Justificar texto */
+    max-width: 600px; /* Ajuste para manter a legibilidade */
+    margin-left: auto; /* Alinhamento à direita */
+}
+
+.photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
+    margin-left: 30px; /* Ajuste da distância entre imagem e texto */
 }
 
-.about, .lectures, .history, .soft-skills, .work, #contato {
+.about {
     padding: 40px 20px;
-    color: #fff;
+    text-align: center;
 }
 
 .about .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: #6dbb63; /* PMS 357 */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .about .button:hover {
-    background-color: #45a049;
+    background-color: #5b9a50; /* Tom mais escuro de PMS 357 */
 }
 
-#contato {
+.icons {
+    margin-top: 20px;
+}
+
+.icons img {
+    margin: 0 10px;
+}
+
+.lectures {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.lectures .photos img {
+    width: 150px;
+    height: auto;
+    margin: 5px;
+}
+
+footer {
     background-color: #222;
-}
-
-#contact-details {
-    /* Estilo para a seção de contato dinâmico */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
