@@ -1,15 +1,26 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #fff;
-    margin: 0;
-    padding: 0;
     background-color: #000;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Cabeçalho */
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 0;
+    background: #333;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,130 +28,106 @@ header {
     z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+.logo {
+    font-size: 24px;
+    color: #1e441e; /* Verde */
+    font-weight: bold;
 }
 
-nav ul li {
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background: #1e441e; /* Verde */
+    margin: 6px 0;
+}
+
+/* Navegação */
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-list a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-.social-icons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.social-icons a {
-    color: #fff;
-    margin-left: 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.hero {
+/* Seção de Introdução */
+.intro {
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 80vh;
-    padding: 0 20px;
-    gap: 20px;
-    text-align: right;
-}
-
-.text {
-    flex: 1;
-    text-align: right;
-}
-
-.text h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
-    margin: 0;
-    text-align: right;
-}
-
-.highlight {
-    color: #6dbb63; /* PMS 357 */
-}
-
-.description {
-    font-size: 1.2em;
-    margin-top: 20px;
-    text-align: right; /* Justificar texto */
-    max-width: 600px; /* Ajuste para manter a legibilidade */
-    margin-left: auto; /* Alinhamento à direita */
-}
-
-.photo {
-    flex: 1;
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.photo img {
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    margin-left: 30px; /* Ajuste da distância entre imagem e texto */
-}
-
-.about {
-    padding: 40px 20px;
+    background: url('sua-imagem-de-fundo.jpg') no-repeat center center/cover;
     text-align: center;
+    padding: 0 20px;
 }
 
-.about .button {
+.intro-content h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.intro-content p {
+    font-size: 24px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6dbb63; /* PMS 357 */
-    color: #fff;
+    font-size: 16px;
+    color: #000;
+    background: #1e441e; /* Verde */
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-weight: bold;
 }
 
-.about .button:hover {
-    background-color: #5b9a50; /* Tom mais escuro de PMS 357 */
-}
+/* Menu Toggle para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
 
-.icons {
-    margin-top: 20px;
-}
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
 
-.icons img {
-    margin: 0 10px;
-}
+    .nav-list.active {
+        display: flex;
+    }
 
-.lectures {
-    text-align: center;
-    padding: 40px 20px;
-}
+    .nav-list li {
+        margin: 10px 0;
+    }
 
-.lectures .photos img {
-    width: 150px;
-    height: auto;
-    margin: 5px;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    .nav-list a {
+        color: #fff;
+    }
 }
