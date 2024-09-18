@@ -1,41 +1,65 @@
-## Navegação:
 
-- Home (principal)
-- Estudos
-- Trabalho
-- Contato
-- Redes sociais (Linkedin, github, Whatsapp)
 
-## Rodapé
 
-- Nome
+EM "Sobre mim"
 
-## Home:
 
-- Apresentação geral
+- Seção Sobre (About)
 
-- Resumo das havilidades
+Imagem Pessoal: File\Image\Me.jpeg
 
-- imagens
+Título:
 
-## Estudos:
+Texto: Um parágrafo sobre quem você é, suas habilidades, e seu histórico profissional.
 
-- Estudos
-- Cursos
-- Trabalhos acadêmicos
-- Apresentações
+- Seção "Cod"
 
-## Trabalho:
+quero uma animação dos ícones passando da direita para a esquerda (quando chegar ao fim dos ícones, recomece a lista infinitamente):
 
-- Estagio e proejetos
-- Currículo
-- GitHub (Trabalhos)
-- Videos com demonstração
+- Palestras & Eventos
 
-## Contato
+Título: "Palestras & Eventos"
 
-- Nome
-- Contato
-- E-mail
-- Localização (Goiânia-GO, Brasil)
-- Imagem
+Subtitulo: "Um segundo, mil ensinamentos"
+
+Inserir uma galeria de imagens
+
+
+Em "Portfolio":
+
+
+
+
+- Seção Portfólio:
+
+Título: "Trabalhos anteriores"
+
+Texto: "Desde monitora para meninas de rede pública, a desenvolvedora back-end e front-end."
+
+Quero campo de busca para pesquisar por palavras chaves.
+
+Galeria de Projetos: 
+
+	- Adicionar imagens no tamanho retangular YxZ
+
+	- Colocar título em cima da imagem
+	- Embaixo do titulo colocar os ícones de filtro
+
+Ex: No projeto "Ia" eu usei java, python e js, então vai ter os ícones embaixo que quando pesquisar no campo de busca ira filtrar eles
+	- Ao clicar em cima da imagem expandir para ter uma versão de imagem e texto lado a lado, com o tituo e uma breve descrição, assim como os ícones dos filtros.
+
+
+
+
+
+
+EM CONTATO:
+
+
+- Seção de Contato
+
+Dados de contato: Nome, telefone e e-mail
+
+Mapa embutido com a localização "Brasil, Goiânia -GO"
+
+
