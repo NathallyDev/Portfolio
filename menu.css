@@ -1,0 +1,85 @@
+:root {
+    --verde-principal: #519651;
+    --verde-secundario: #00b300;
+    --branco: white;
+    --preto: black;
+
+    --font-size-large: 3rem;
+    --font-size-medium: 2rem;
+    --font-size-small: 1rem;
+    --padding-section: 2rem;
+}
+
+/* Estilos do Menu */
+nav {
+    background-color: #000000;
+    padding: 1rem;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: var(--verde-principal);
+}
+
+/* Estilos do Menu Hambúrguer */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Responsividade (telas pequenas) */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 1rem 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}

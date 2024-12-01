@@ -1,0 +1,120 @@
+:root {
+    --verde-principal: #519651;
+    --verde-secundario: #00b300;
+    --branco: white;
+    --preto: black;
+
+    --font-size-large: 3rem;
+    --font-size-medium: 2rem;
+    --font-size-small: 1rem;
+    --padding-section: 2rem;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--preto) !important;
+    line-height: 1.5;
+}
+
+.titulo {
+    text-align: center;
+    padding: var(--padding-section);
+}
+
+.titulo ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    list-style: none; 
+    padding: 20px; 
+    margin: 20px; 
+    gap: 100px; 
+}
+
+
+#titulo1 {
+    color: var(--branco);
+    font-size: var(--font-size-large);
+    margin: 0;
+}
+
+#titulo2 {
+    color: var(--verde-principal);
+    font-size: var(--font-size-large);
+    margin: 0;
+}
+
+.titulo p {
+    color: var(--branco);
+    font-size: var(--font-size-small);
+    margin: 1rem 0;
+}
+
+.titulo img{
+    border: 2px solid var(--preto);
+    border-radius: 100000px;
+    max-width: 500px;
+    height: auto;    
+}
+
+.problem {
+    background-image: url("./images/ImagemFundo/background_home.jpeg");
+    padding: var(--padding-section);
+    text-align: center;
+}
+
+.problem h2 {
+    font-size: var(--font-size-medium);
+    color: var(--branco);
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.problem ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    list-style: none; 
+    margin-top: 50px;
+    gap: 2px; 
+}
+
+.problem li img {
+    border: 2px solid var(--preto);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+footer {
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+footer h3 {
+    margin: 0.5rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #titulo1,
+    #titulo2 {
+        font-size: var(--font-size-medium);
+    }
+
+    .titulo p {
+        font-size: var(--font-size-small);
+    }
+
+    .problem ul {
+        flex-direction: column;
+    }
+
+    .problem li img {
+        max-width: 150px;
+    }
+}
