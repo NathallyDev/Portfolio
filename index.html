@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    :root {
+      --verde-principal: #519651;
+      --verde-secundario: #00b300;
+      --branco: white;
+      --preto: black;
+    }
+  </style>
 </head>
+<body class="bg-[var(--branco)] text-[var(--preto)] font-sans">
 
-<body>
-    <main>
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 left-0 z-50 bg-[var(--branco)] shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-extrabold" style="color: var(--verde-principal);">MeuPortfólio</h1>
 
-        <nav>
-            <!-- Ícone do Menu Sanduíche (Hambúrguer) -->
-            <div class="menu-icon" id="menu-icon">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-    
-            <!-- Menu -->
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobreMim.html">About Me</a></li>
-                <li><a href="trabalhos.html">Works</a></li>
-                <li><a href="contato.html">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <script>
-            // Script para exibir/ocultar o menu ao clicar no ícone
-            const menuIcon = document.getElementById('menu-icon');
-            const menu = document.getElementById('menu');
-    
-            menuIcon.addEventListener('click', () => {
-                menu.classList.toggle('show');
-            });
-        </script>
+      <!-- Botão sanduíche -->
+      <button id="menu-btn" class="text-3xl md:hidden" style="color: var(--verde-principal);">
+        <i class="ph ph-list"></i>
+      </button>
 
-        <section>
-            <div class="titulo">
-                <ul>
-                    <li>
-                        <h1 id="titulo1">Your project, our code:</h1>
-                        <h2 id="titulo2">Resultados que vendem!</h2>
-                        <p>Turn your ideas into reality with tailor-made solutions. With a unique and innovative approach, I'm here to help your business grow and stand out.</p>
-                        <p>Get in touch and find out how I can accelerate your success!</p>
-                    </li>
-                    <li>
-                        <img src="./images/Eu/nathally_art.png" alt="Náthally">
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- Menu -->
+      <nav id="menu" class="hidden md:flex space-x-6 font-medium">
+        <a href="#home" class="hover:text-[var(--verde-secundario)] transition">Home</a>
+        <a href="#sobre" class="hover:text-[var(--verde-secundario)] transition">Sobre Mim</a>
+        <a href="#trabalhos" class="hover:text-[var(--verde-secundario)] transition">Trabalhos</a>
+        <a href="#contato" class="hover:text-[var(--verde-secundario)] transition">Contato</a>
+      </nav>
+    </div>
 
-        <section class="problem">
-            <div>
-                <h2>Found a problem?</h2>
-                <ul>
-                    <li>
-                        <img src="./images/Problemas/problema4.jpg" alt="Problem 4">
-                    </li>
-                    <li>
-                        <img src="./images/Problemas/problema3.jpeg" alt="Problem 3">
-                    </li>
-                    <li>
-                        <img src="./images/Problemas/problema2.png" alt="Problem 2">
-                    </li>
-                    <li>
-                        <img src="./images/Problemas/problem1.webp" alt="Problem 1">
-                    </li>
-                </ul>
-            </div>
+    <!-- Menu mobile -->
+    <div id="menu-mobile" class="hidden flex-col bg-[var(--branco)] shadow-md md:hidden">
+      <a href="#home" class="px-4 py-2 border-b hover:bg-[var(--verde-principal)] hover:text-white transition">Home</a>
+      <a href="#sobre" class="px-4 py-2 border-b hover:bg-[var(--verde-principal)] hover:text-white transition">Sobre Mim</a>
+      <a href="#trabalhos" class="px-4 py-2 border-b hover:bg-[var(--verde-principal)] hover:text-white transition">Trabalhos</a>
+      <a href="#contato" class="px-4 py-2 hover:bg-[var(--verde-principal)] hover:text-white transition">Contato</a>
+    </div>
+  </header>
 
-            <footer>
-                <h3>Náthally Lima Arruda</h3>
-                <h3>2025</h3>
-            </footer>
-        </section>
-    </main>
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 bg-gradient-to-r from-[var(--verde-principal)] to-[var(--verde-secundario)] text-white relative">
+    <div class="animate-fadeInUp">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Olá, eu sou <span class="text-yellow-300">[Seu Nome]</span></h2>
+      <p class="text-lg md:text-2xl mb-6 opacity-90">Programadora apaixonada por criar soluções criativas e funcionais.</p>
+      <a href="#trabalhos" class="bg-yellow-400 text-black px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-yellow-300 hover:scale-105 transition transform">Veja meus trabalhos</a>
+    </div>
+  </section>
+
+  <!-- Resumo -->
+  <section class="py-20 container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-gray-800">Resumo Geral</h3>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">Sou desenvolvedora web com experiência em front-end e back-end. Adoro transformar ideias em projetos reais e funcionais, utilizando as melhores práticas de programação e design.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-[var(--branco)] rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition transform">
+        <i class="ph ph-code" style="color: var(--verde-principal); font-size: 3rem;"></i>
+        <h4 class="font-bold text-xl mt-4 mb-2">Desenvolvimento</h4>
+        <p class="text-gray-600">Criação de sites e aplicações modernas e responsivas.</p>
+      </div>
+      <div class="bg-[var(--branco)] rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition transform">
+        <i class="ph ph-brain" style="color: var(--verde-principal); font-size: 3rem;"></i>
+        <h4 class="font-bold text-xl mt-4 mb-2">Soluções Criativas</h4>
+        <p class="text-gray-600">Trago ideias inovadoras para cada projeto que participo.</p>
+      </div>
+      <div class="bg-[var(--branco)] rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition transform">
+        <i class="ph ph-users" style="color: var(--verde-principal); font-size: 3rem;"></i>
+        <h4 class="font-bold text-xl mt-4 mb-2">Colaboração</h4>
+        <p class="text-gray-600">Trabalho em equipe para alcançar os melhores resultados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-[var(--verde-principal)] text-white py-6 text-center">
+    <p>© 2025 - Feito com ❤ por [Seu Nome]</p>
+  </footer>
+
+  <!-- Script para menu sanduíche -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menuMobile = document.getElementById("menu-mobile");
+
+    btn.addEventListener("click", () => {
+      menuMobile.classList.toggle("hidden");
+    });
+  </script>
 
 </body>
 </html>
