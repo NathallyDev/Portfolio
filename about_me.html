@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    :root {
+      --verde-principal: #519651;
+      --verde-secundario: #00b300;
+      --branco: white;
+      --preto: black;
+    }
+    body {
+      background: #000;
+    }
+  </style>
+</head>
+<body class="text-[var(--branco)] font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 left-0 z-50 bg-black/70 backdrop-blur-md shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-extrabold text-[var(--verde-secundario)]">MeuPortfólio</h1>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="index.html" class="hover:text-[var(--verde-secundario)] transition">Home</a>
+        <a href="sobre.html" class="text-[var(--verde-secundario)] font-bold">Sobre Mim</a>
+        <a href="trabalhos.html" class="hover:text-[var(--verde-secundario)] transition">Trabalhos</a>
+        <a href="contato.html" class="hover:text-[var(--verde-secundario)] transition">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 bg-black">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      
+      <!-- Foto -->
+      <div class="flex-1 text-center md:text-left">
+        <img src="C:\Users\natha\Documents\GitHub\Site_Tema01\images\Me\me-art.png" alt="Sua Foto"
+          class="rounded-full border-4 border-[var(--verde-secundario)] shadow-[0_0_25px_var(--verde-principal)] mx-auto md:mx-0">
+      </div>
+
+      <!-- Texto -->
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+          Olá, eu sou <span class="text-[var(--verde-secundario)]">[Seu Nome]</span>
+        </h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Desenvolvedora web apaixonada por criar experiências digitais modernas, responsivas e elegantes.
+        </p>
+        <a href="contato.html" 
+           class="bg-[var(--verde-secundario)] text-black px-6 py-3 rounded-xl font-bold hover:scale-105 transition inline-block">
+          Entre em Contato
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section class="py-20 container mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h3 class="text-3xl font-bold mb-4 text-[var(--verde-secundario)]">Quem sou eu?</h3>
+        <p class="text-gray-300 mb-6">
+          Escreva um pouco sobre você: sua formação, experiências, o que gosta de fazer, sua motivação como programadora e suas metas profissionais.
+        </p>
+        <p class="text-gray-400">
+          Este é o espaço ideal para dar um toque humano ao portfólio, permitindo que os visitantes conheçam você além das habilidades técnicas.
+        </p>
+      </div>
+      <div>
+        <img src="C:\Users\natha\Documents\GitHub\Site_Tema01\images\Me\me-art.png" alt="Sua Foto"
+             class="rounded-2xl shadow-lg border border-[var(--verde-principal)]">
+      </div>
+    </div>
+  </section>
+
+  <!-- Formação -->
+  <section class="py-20 bg-black/80">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12 text-[var(--verde-secundario)]">Formação Acadêmica</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-black/70 border border-[var(--verde-principal)] p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <i class="ph ph-graduation-cap text-5xl text-[var(--verde-secundario)] mb-4"></i>
+          <h4 class="text-xl font-bold mb-2">Faculdade X</h4>
+          <p class="text-gray-400">Curso: [Nome do curso]<br>Ano de Conclusão: [Ano]</p>
+        </div>
+        <div class="bg-black/70 border border-[var(--verde-principal)] p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <i class="ph ph-book text-5xl text-[var(--verde-secundario)] mb-4"></i>
+          <h4 class="text-xl font-bold mb-2">Curso Y</h4>
+          <p class="text-gray-400">Instituição: [Nome da Instituição]<br>Ano: [Ano]</p>
+        </div>
+        <div class="bg-black/70 border border-[var(--verde-principal)] p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <i class="ph ph-translate text-5xl text-[var(--verde-secundario)] mb-4"></i>
+          <h4 class="text-xl font-bold mb-2">Idiomas</h4>
+          <p class="text-gray-400">[Idioma 1] - [Nível]<br>[Idioma 2] - [Nível]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section class="py-20 container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12 text-[var(--verde-secundario)]">Minhas Habilidades</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-black/70 p-6 rounded-xl border border-[var(--verde-principal)] hover:shadow-lg hover:scale-105 transition">
+        <h4 class="font-bold mb-2">Front-End</h4>
+        <p class="text-gray-400 mb-4">HTML, CSS, JavaScript, React, TailwindCSS</p>
+        <div class="w-full bg-gray-700 h-2 rounded-full">
+          <div class="bg-[var(--verde-secundario)] h-2 rounded-full w-[80%]"></div>
+        </div>
+      </div>
+      <div class="bg-black/70 p-6 rounded-xl border border-[var(--verde-principal)] hover:shadow-lg hover:scale-105 transition">
+        <h4 class="font-bold mb-2">Back-End</h4>
+        <p class="text-gray-400 mb-4">Node.js, Python, PHP, MySQL</p>
+        <div class="w-full bg-gray-700 h-2 rounded-full">
+          <div class="bg-[var(--verde-secundario)] h-2 rounded-full w-[70%]"></div>
+        </div>
+      </div>
+      <div class="bg-black/70 p-6 rounded-xl border border-[var(--verde-principal)] hover:shadow-lg hover:scale-105 transition">
+        <h4 class="font-bold mb-2">Soft Skills</h4>
+        <p class="text-gray-400 mb-4">Comunicação, Trabalho em equipe, Resolução de problemas</p>
+        <div class="w-full bg-gray-700 h-2 rounded-full">
+          <div class="bg-[var(--verde-secundario)] h-2 rounded-full w-[90%]"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section class="py-20 bg-black/80">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12 text-[var(--verde-secundario)]">Portfólio</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="rounded-xl overflow-hidden border border-[var(--verde-principal)] hover:scale-105 transition">
+          <img src="https://via.placeholder.com/400x250" alt="Projeto 1">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-[var(--verde-principal)] hover:scale-105 transition">
+          <img src="https://via.placeholder.com/400x250" alt="Projeto 2">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-[var(--verde-principal)] hover:scale-105 transition">
+          <img src="https://via.placeholder.com/400x250" alt="Projeto 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="py-20 container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-8 text-[var(--verde-secundario)]">Entre em Contato</h3>
+    <form class="max-w-2xl mx-auto space-y-6">
+      <input type="text" placeholder="Seu Nome" class="w-full p-4 rounded-xl bg-black/70 border border-[var(--verde-principal)] focus:outline-none focus:ring-2 focus:ring-[var(--verde-secundario)]">
+      <input type="email" placeholder="Seu Email" class="w-full p-4 rounded-xl bg-black/70 border border-[var(--verde-principal)] focus:outline-none focus:ring-2 focus:ring-[var(--verde-secundario)]">
+      <textarea rows="5" placeholder="Sua Mensagem" class="w-full p-4 rounded-xl bg-black/70 border border-[var(--verde-principal)] focus:outline-none focus:ring-2 focus:ring-[var(--verde-secundario)]"></textarea>
+      <button type="submit" class="bg-[var(--verde-secundario)] text-black px-6 py-3 rounded-xl font-bold hover:scale-105 transition">
+        Enviar Mensagem
+      </button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-black/90 text-gray-300 py-6 text-center">
+    <p>© 2025 - Feito com ❤ por [Seu Nome]</p>
+  </footer>
+
+</body>
+</html>

@@ -5,92 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Portfólio - Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <style>
-    :root {
-      --verde-principal: #519651;
-      --verde-secundario: #00b300;
-      --branco: white;
-      --preto: black;
-    }
-  </style>
 </head>
-<body class="bg-[var(--branco)] text-[var(--preto)] font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans">
 
   <!-- Navbar -->
-  <header class="fixed w-full top-0 left-0 z-50 bg-[var(--branco)] shadow-md">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-extrabold" style="color: var(--verde-principal);">MeuPortfólio</h1>
-
-      <!-- Botão sanduíche -->
-      <button id="menu-btn" class="text-3xl md:hidden" style="color: var(--verde-principal);">
-        <i class="ph ph-list"></i>
-      </button>
-
-      <!-- Menu -->
-      <nav id="menu" class="hidden md:flex space-x-6 font-medium">
-        <a href="#home" class="hover:text-[var(--verde-secundario)] transition">Home</a>
-        <a href="#sobre" class="hover:text-[var(--verde-secundario)] transition">Sobre Mim</a>
-        <a href="#trabalhos" class="hover:text-[var(--verde-secundario)] transition">Trabalhos</a>
-        <a href="#contato" class="hover:text-[var(--verde-secundario)] transition">Contato</a>
-      </nav>
-    </div>
-
-    <!-- Menu mobile -->
-    <div id="menu-mobile" class="hidden flex-col bg-[var(--branco)] shadow-md md:hidden">
-      <a href="#home" class="px-4 py-2 border-b hover:bg-[var(--verde-principal)] hover:text-white transition">Home</a>
-      <a href="#sobre" class="px-4 py-2 border-b hover:bg-[var(--verde-principal)] hover:text-white transition">Sobre Mim</a>
-      <a href="#trabalhos" class="px-4 py-2 border-b hover:bg-[var(--verde-principal)] hover:text-white transition">Trabalhos</a>
-      <a href="#contato" class="px-4 py-2 hover:bg-[var(--verde-principal)] hover:text-white transition">Contato</a>
-    </div>
+  <header class="fixed w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold text-indigo-600">Meu Portfólio</h1>
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="#home" class="hover:text-indigo-600">Home</a></li>
+        <li><a href="#servicos" class="hover:text-indigo-600">Serviços</a></li>
+        <li><a href="#social" class="hover:text-indigo-600">Redes</a></li>
+        <li><a href="#footer" class="hover:text-indigo-600">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 bg-gradient-to-r from-[var(--verde-principal)] to-[var(--verde-secundario)] text-white relative">
-    <div class="animate-fadeInUp">
-      <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Olá, eu sou <span class="text-yellow-300">[Seu Nome]</span></h2>
-      <p class="text-lg md:text-2xl mb-6 opacity-90">Programadora apaixonada por criar soluções criativas e funcionais.</p>
-      <a href="#trabalhos" class="bg-yellow-400 text-black px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-yellow-300 hover:scale-105 transition transform">Veja meus trabalhos</a>
+  <!-- Hero / Introdução -->
+  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+    <div class="text-center px-6">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Olá, eu sou <span class="text-yellow-300">[Seu Nome]</span></h2>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Programadora apaixonada por tecnologia e criação de soluções web modernas, responsivas e elegantes.</p>
+      <a href="#servicos" class="px-6 py-3 bg-yellow-300 text-indigo-800 font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition">Ver Meus Serviços</a>
     </div>
   </section>
 
-  <!-- Resumo -->
-  <section class="py-20 container mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold mb-6 text-gray-800">Resumo Geral</h3>
-    <p class="text-gray-600 max-w-2xl mx-auto mb-12">Sou desenvolvedora web com experiência em front-end e back-end. Adoro transformar ideias em projetos reais e funcionais, utilizando as melhores práticas de programação e design.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-[var(--branco)] rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition transform">
-        <i class="ph ph-code" style="color: var(--verde-principal); font-size: 3rem;"></i>
-        <h4 class="font-bold text-xl mt-4 mb-2">Desenvolvimento</h4>
-        <p class="text-gray-600">Criação de sites e aplicações modernas e responsivas.</p>
+  <!-- Serviços -->
+  <section id="servicos" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-12 text-indigo-700">Meus Serviços</h3>
+      <div class="grid gap-8 md:grid-cols-3">
+        
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
+          <h4 class="text-2xl font-semibold mb-4">Desenvolvimento Web</h4>
+          <p class="text-gray-600">Criação de sites modernos, responsivos e com alto desempenho.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
+          <h4 class="text-2xl font-semibold mb-4">UI/UX Design</h4>
+          <p class="text-gray-600">Layouts atraentes e intuitivos para proporcionar a melhor experiência ao usuário.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
+          <h4 class="text-2xl font-semibold mb-4">Aplicações Personalizadas</h4>
+          <p class="text-gray-600">Soluções sob medida para atender as necessidades específicas de cada cliente.</p>
+        </div>
+
       </div>
-      <div class="bg-[var(--branco)] rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition transform">
-        <i class="ph ph-brain" style="color: var(--verde-principal); font-size: 3rem;"></i>
-        <h4 class="font-bold text-xl mt-4 mb-2">Soluções Criativas</h4>
-        <p class="text-gray-600">Trago ideias inovadoras para cada projeto que participo.</p>
-      </div>
-      <div class="bg-[var(--branco)] rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition transform">
-        <i class="ph ph-users" style="color: var(--verde-principal); font-size: 3rem;"></i>
-        <h4 class="font-bold text-xl mt-4 mb-2">Colaboração</h4>
-        <p class="text-gray-600">Trabalho em equipe para alcançar os melhores resultados.</p>
+    </div>
+  </section>
+
+  <!-- Redes Sociais -->
+  <section id="social" class="py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h3 class="text-4xl font-bold mb-12">Minhas Redes</h3>
+      <div class="flex justify-center space-x-8 text-3xl">
+        <a href="#" class="hover:text-yellow-300 transition">🌐</a>
+        <a href="#" class="hover:text-yellow-300 transition">🐦</a>
+        <a href="#" class="hover:text-yellow-300 transition">💼</a>
+        <a href="#" class="hover:text-yellow-300 transition">📷</a>
       </div>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <footer class="bg-[var(--verde-principal)] text-white py-6 text-center">
-    <p>© 2025 - Feito com ❤ por [Seu Nome]</p>
+  <footer id="footer" class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <p class="mb-4">© 2025 - Criado por [Seu Nome]. Todos os direitos reservados.</p>
+      <p class="text-sm">Desenvolvedora Web • Criando experiências digitais incríveis</p>
+    </div>
   </footer>
-
-  <!-- Script para menu sanduíche -->
-  <script>
-    const btn = document.getElementById("menu-btn");
-    const menuMobile = document.getElementById("menu-mobile");
-
-    btn.addEventListener("click", () => {
-      menuMobile.classList.toggle("hidden");
-    });
-  </script>
 
 </body>
 </html>
