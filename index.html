@@ -7,25 +7,25 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .navbar-solid {
-      background-color: #333125 !important;
+      background-color: #242936 !important;
       transition: background-color 0.3s ease-in-out;
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-white text-black font-sans">
 
   <!-- Navbar -->
   <header id="navbar" class="fixed w-full z-50 transition">
     <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold text-[#DBC558]">NáthallyDev</h1>
+      <h1 class="text-2xl font-bold text-[#FFFFFF]">NáthallyDev</h1>
 
       <!-- Menu -->
       <ul class="flex space-x-6 text-lg text-white">
-        <li><a href="#home" class="hover:text-[#DBC558]">Home</a></li>
-        <li><a href="#sobremim" class="hover:text-[#DBC558]">Sobre Mim</a></li>
-        <li><a href="#trabalhos" class="hover:text-[#DBC558]">Trabalhos</a></li>
-        <li><a href="#contato" class="hover:text-[#DBC558]">Contato</a></li>
+        <li><a href="#home" class="hover:text-[#603e62]">Home</a></li>
+        <li><a href="#sobremim" class="hover:text-[#603e62]">Sobre Mim</a></li>
+        <li><a href="#trabalhos" class="hover:text-[#603e62]">Trabalhos</a></li>
+        <li><a href="#contato" class="hover:text-[#603e62]">Contato</a></li>
       </ul>
 
       <!-- Idiomas -->
@@ -44,14 +44,16 @@
   <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-center relative"
     style="background-image: url('images/Wallpapers/background_1.png');">
 
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
     <div class="relative text-white px-6">
-      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Olá, eu sou <span class="text-[#DBC558]">Náthally Lima</span></h2>
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+        Olá, eu sou <span class="text-[#603e62]">Náthally Lima</span>
+      </h2>
       <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
         Onde suas ideias, são nossos códigos
       </p>
-      <a href="#servicos" class="px-6 py-3 bg-[#B0A364] text-white font-semibold rounded-lg shadow-lg hover:bg-[#DBC558] transition">
+      <a href="#servicos" class="px-6 py-3 bg-[#603e62] text-white font-semibold rounded-lg shadow-lg hover:bg-[#242936] transition">
         Saiba Mais
       </a>
     </div>
@@ -60,28 +62,47 @@
   <!-- Seção Serviços -->
   <section id="servicos" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto text-center px-6">
-      <h3 class="text-4xl font-bold text-[#333125] mb-12">Serviços</h3>
-      <div class="grid gap-12 md:grid-cols-3">
+      <h3 class="text-4xl font-bold text-[#242936] mb-12">Serviços</h3>
 
+      <div class="grid gap-12 md:grid-cols-3">
+        
         <!-- Card 1 -->
-        <div class="rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition bg-gray-100">
-          <h4 class="text-2xl font-semibold mb-4">Inteligência Artificial</h4>
-          <p class="text-gray-700 mb-6">Modelos de IA aplicados em soluções práticas e inteligentes.</p>
-          <a href="trabalhos.html" class="px-4 py-2 bg-[#333125] text-white rounded-lg hover:bg-[#DBC558]">Saiba Mais</a>
+        <div class="flex flex-col items-center">
+          <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg mb-6">
+            <img src="images/Serviços/1.jpg" alt="Inteligência Artificial" class="w-full h-full object-cover">
+          </div>
+          <h4 class="text-xl font-semibold text-black">Inteligência Artificial & ChatBots</h4>
+          <p class="text-[#603e62] font-medium mb-4">Soluções de Machine Learning</p>
+          <a href="trabalhos.html" 
+             class="px-6 py-2 bg-[#603e62] text-white rounded-full shadow hover:bg-[#242936] transition">
+            Saiba Mais
+          </a>
         </div>
 
         <!-- Card 2 -->
-        <div class="rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition bg-gray-100">
-          <h4 class="text-2xl font-semibold mb-4">Backend</h4>
-          <p class="text-gray-700 mb-6">APIs e sistemas robustos, escaláveis e seguros.</p>
-          <a href="trabalhos.html" class="px-4 py-2 bg-[#333125] text-white rounded-lg hover:bg-[#DBC558]">Saiba Mais</a>
+        <div class="flex flex-col items-center">
+          <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg mb-6">
+            <img src="images/Serviços/2.jpg" alt="Backend" class="w-full h-full object-cover">
+          </div>
+          <h4 class="text-xl font-semibold text-black">Desenvolvimento de Software</h4>
+          <p class="text-[#603e62] font-medium mb-4">Criação de ferramentas e aplicações robustas para seus problemas</p>
+          <a href="trabalhos.html" 
+             class="px-6 py-2 bg-[#603e62] text-white rounded-full shadow hover:bg-[#242936] transition">
+            Saiba Mais
+          </a>
         </div>
 
         <!-- Card 3 -->
-        <div class="rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition bg-gray-100">
-          <h4 class="text-2xl font-semibold mb-4">Frontend</h4>
-          <p class="text-gray-700 mb-6">Interfaces modernas e responsivas que encantam usuários.</p>
-          <a href="trabalhos.html" class="px-4 py-2 bg-[#333125] text-white rounded-lg hover:bg-[#DBC558]">Saiba Mais</a>
+        <div class="flex flex-col items-center">
+          <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg mb-6">
+            <img src="images/Serviços/3.jpg" alt="Frontend" class="w-full h-full object-cover">
+          </div>
+          <h4 class="text-xl font-semibold text-black">Consultoria</h4>
+          <p class="text-[#603e62] font-medium mb-4">Está perdido? Uma consultoria pode te ajudar!</p>
+          <a href="trabalhos.html" 
+             class="px-6 py-2 bg-[#603e62] text-white rounded-full shadow hover:bg-[#242936] transition">
+            Saiba Mais
+          </a>
         </div>
 
       </div>
@@ -90,42 +111,22 @@
 
   <!-- Seção Contato -->
   <section id="contato" class="h-[80vh] bg-cover bg-center flex items-center justify-center text-center relative"
-    style="background-image: url('images/Wallpapers/background_2.jpeg');">
+    style="background-image: url('images/Wallpapers/background_2.png');">
 
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
 
     <div class="relative text-white px-6">
       <h3 class="text-4xl md:text-5xl font-bold mb-6">Entre em Contato</h3>
       <p class="max-w-2xl mx-auto mb-6">Marque uma consulta gratuita ou tire suas dúvidas diretamente comigo.</p>
-      <a href="https://wa.me/5511999999999" target="_blank" class="px-6 py-3 bg-[#B0A364] text-white font-semibold rounded-lg shadow-lg hover:bg-[#DBC558] transition">
+      <a href="https://wa.me/5511999999999" target="_blank" 
+         class="px-6 py-3 bg-[#603e62] text-white font-semibold rounded-lg shadow-lg hover:bg-[#242936] transition">
         Falar no WhatsApp
       </a>
     </div>
   </section>
 
-  <!-- Redes Sociais -->
-  <section id="redes" class="py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto text-center px-6">
-      <h3 class="text-4xl font-bold text-[#333125] mb-12">Siga-me nas Redes</h3>
-      <div class="grid gap-6 grid-cols-2 md:grid-cols-4">
-        <a href="https://www.linkedin.com" target="_blank">
-          <img src="images/redes/linkedin.png" class="rounded-xl shadow-lg hover:scale-105 transition"/>
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-          <img src="images/redes/instagram.png" class="rounded-xl shadow-lg hover:scale-105 transition"/>
-        </a>
-        <a href="https://wa.me/5511999999999" target="_blank">
-          <img src="images/redes/whatsapp.png" class="rounded-xl shadow-lg hover:scale-105 transition"/>
-        </a>
-        <a href="mailto:email@exemplo.com" target="_blank">
-          <img src="images/redes/email.png" class="rounded-xl shadow-lg hover:scale-105 transition"/>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- Rodapé -->
-  <footer class="bg-[#333125] text-gray-300 py-10">
+  <footer class="bg-[#242936] text-gray-300 py-10">
     <div class="text-center">
       © 2025 - Criado por Náthally Lima Arruda
     </div>
