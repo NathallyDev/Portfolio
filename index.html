@@ -3,81 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio - Home</title>
+  <title>Meu Portfólio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .navbar-solid {
+      background-color: #333125 !important;
+      transition: background-color 0.3s ease-in-out;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
   <!-- Navbar -->
-  <header class="fixed w-full bg-white/80 backdrop-blur-md shadow-md z-50">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
-      <h1 class="text-2xl font-bold text-indigo-600">Meu Portfólio</h1>
-      <ul class="flex space-x-6 text-lg">
-        <li><a href="#home" class="hover:text-indigo-600">Home</a></li>
-        <li><a href="#servicos" class="hover:text-indigo-600">Serviços</a></li>
-        <li><a href="#social" class="hover:text-indigo-600">Redes</a></li>
-        <li><a href="#footer" class="hover:text-indigo-600">Contato</a></li>
+  <header id="navbar" class="fixed w-full z-50 transition">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold text-[#DBC558]">NáthallyDev</h1>
+
+      <!-- Menu -->
+      <ul class="flex space-x-6 text-lg text-white">
+        <li><a href="#home" class="hover:text-[#DBC558]">Home</a></li>
+        <li><a href="#sobremim" class="hover:text-[#DBC558]">Sobre Mim</a></li>
+        <li><a href="#trabalhos" class="hover:text-[#DBC558]">Trabalhos</a></li>
+        <li><a href="#contato" class="hover:text-[#DBC558]">Contato</a></li>
       </ul>
+
+      <!-- Idiomas -->
+      <div>
+        <select class="bg-transparent border border-white text-white px-2 py-1 rounded">
+          <option>🇧🇷 PT</option>
+          <option>🇺🇸 EN</option>
+          <option>🇪🇸 ES</option>
+          <option>🇯🇵 JP</option>
+        </select>
+      </div>
     </nav>
   </header>
 
-  <!-- Hero / Introdução -->
-  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-    <div class="text-center px-6">
-      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Olá, eu sou <span class="text-yellow-300">[Seu Nome]</span></h2>
-      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Programadora apaixonada por tecnologia e criação de soluções web modernas, responsivas e elegantes.</p>
-      <a href="#servicos" class="px-6 py-3 bg-yellow-300 text-indigo-800 font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition">Ver Meus Serviços</a>
+  <!-- Seção Hero -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-center relative"
+    style="background-image: url('images/Wallpapers/background_1.png');">
+
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+    <div class="relative text-white px-6">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Olá, eu sou <span class="text-[#DBC558]">Náthally Lima</span></h2>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+        Onde suas ideias, são nossos códigos
+      </p>
+      <a href="#servicos" class="px-6 py-3 bg-[#B0A364] text-white font-semibold rounded-lg shadow-lg hover:bg-[#DBC558] transition">
+        Saiba Mais
+      </a>
     </div>
   </section>
 
-  <!-- Serviços -->
-  <section id="servicos" class="py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-4xl font-bold mb-12 text-indigo-700">Meus Serviços</h3>
-      <div class="grid gap-8 md:grid-cols-3">
-        
+  <!-- Seção Serviços -->
+  <section id="servicos" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h3 class="text-4xl font-bold text-[#333125] mb-12">Serviços</h3>
+      <div class="grid gap-12 md:grid-cols-3">
+
         <!-- Card 1 -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
-          <h4 class="text-2xl font-semibold mb-4">Desenvolvimento Web</h4>
-          <p class="text-gray-600">Criação de sites modernos, responsivos e com alto desempenho.</p>
+        <div class="rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition bg-gray-100">
+          <h4 class="text-2xl font-semibold mb-4">Inteligência Artificial</h4>
+          <p class="text-gray-700 mb-6">Modelos de IA aplicados em soluções práticas e inteligentes.</p>
+          <a href="trabalhos.html" class="px-4 py-2 bg-[#333125] text-white rounded-lg hover:bg-[#DBC558]">Saiba Mais</a>
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
-          <h4 class="text-2xl font-semibold mb-4">UI/UX Design</h4>
-          <p class="text-gray-600">Layouts atraentes e intuitivos para proporcionar a melhor experiência ao usuário.</p>
+        <div class="rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition bg-gray-100">
+          <h4 class="text-2xl font-semibold mb-4">Backend</h4>
+          <p class="text-gray-700 mb-6">APIs e sistemas robustos, escaláveis e seguros.</p>
+          <a href="trabalhos.html" class="px-4 py-2 bg-[#333125] text-white rounded-lg hover:bg-[#DBC558]">Saiba Mais</a>
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
-          <h4 class="text-2xl font-semibold mb-4">Aplicações Personalizadas</h4>
-          <p class="text-gray-600">Soluções sob medida para atender as necessidades específicas de cada cliente.</p>
+        <div class="rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition bg-gray-100">
+          <h4 class="text-2xl font-semibold mb-4">Frontend</h4>
+          <p class="text-gray-700 mb-6">Interfaces modernas e responsivas que encantam usuários.</p>
+          <a href="trabalhos.html" class="px-4 py-2 bg-[#333125] text-white rounded-lg hover:bg-[#DBC558]">Saiba Mais</a>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- Seção Contato -->
+  <section id="contato" class="h-[80vh] bg-cover bg-center flex items-center justify-center text-center relative"
+    style="background-image: url('images/Wallpapers/background_2.jpeg');">
+
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <div class="relative text-white px-6">
+      <h3 class="text-4xl md:text-5xl font-bold mb-6">Entre em Contato</h3>
+      <p class="max-w-2xl mx-auto mb-6">Marque uma consulta gratuita ou tire suas dúvidas diretamente comigo.</p>
+      <a href="https://wa.me/5511999999999" target="_blank" class="px-6 py-3 bg-[#B0A364] text-white font-semibold rounded-lg shadow-lg hover:bg-[#DBC558] transition">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
   <!-- Redes Sociais -->
-  <section id="social" class="py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+  <section id="redes" class="py-20 bg-gray-100">
     <div class="max-w-6xl mx-auto text-center px-6">
-      <h3 class="text-4xl font-bold mb-12">Minhas Redes</h3>
-      <div class="flex justify-center space-x-8 text-3xl">
-        <a href="#" class="hover:text-yellow-300 transition">🌐</a>
-        <a href="#" class="hover:text-yellow-300 transition">🐦</a>
-        <a href="#" class="hover:text-yellow-300 transition">💼</a>
-        <a href="#" class="hover:text-yellow-300 transition">📷</a>
+      <h3 class="text-4xl font-bold text-[#333125] mb-12">Siga-me nas Redes</h3>
+      <div class="grid gap-6 grid-cols-2 md:grid-cols-4">
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="images/redes/linkedin.png" class="rounded-xl shadow-lg hover:scale-105 transition"/>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="images/redes/instagram.png" class="rounded-xl shadow-lg hover:scale-105 transition"/>
+        </a>
+        <a href="https://wa.me/5511999999999" target="_blank">
+          <img src="images/redes/whatsapp.png" class="rounded-xl shadow-lg hover:scale-105 transition"/>
+        </a>
+        <a href="mailto:email@exemplo.com" target="_blank">
+          <img src="images/redes/email.png" class="rounded-xl shadow-lg hover:scale-105 transition"/>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <footer id="footer" class="bg-gray-900 text-gray-300 py-8">
-    <div class="max-w-6xl mx-auto text-center px-6">
-      <p class="mb-4">© 2025 - Criado por [Seu Nome]. Todos os direitos reservados.</p>
-      <p class="text-sm">Desenvolvedora Web • Criando experiências digitais incríveis</p>
+  <footer class="bg-[#333125] text-gray-300 py-10">
+    <div class="text-center">
+      © 2025 - Criado por Náthally Lima Arruda
     </div>
   </footer>
+
+  <!-- Script Navbar -->
+  <script>
+    window.addEventListener("scroll", function() {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("navbar-solid");
+      } else {
+        navbar.classList.remove("navbar-solid");
+      }
+    });
+  </script>
 
 </body>
 </html>
